@@ -1,3 +1,6 @@
+/**
+ * C'est juste pas encore fini, ça sera peut-être modifié dans les jours qui suivent.
+ */
 package testsUnitaires;
 
 import static org.junit.jupiter.api.Assertions.*;
