@@ -1,5 +1,5 @@
 /**
- * C'est juste pas encore fini, ça sera peut-être modifié dans les jours qui suivent.
+ *Après des vérification, je confirme que le test est terminé.
  */
 package testsUnitaires;
 
@@ -37,10 +37,8 @@ class testEmploye
 		employe = ligue.addEmploye("Bouchard", "Gérard", "g.bouchard@gmail.com", "azerty");
 	}
 
-	// ============================================================
+	
 	// 1. Les setters : on change une valeur, puis on la relit
-	// ============================================================
-
 	@Test
 	void setNom()
 	{
@@ -71,10 +69,8 @@ class testEmploye
 		assertFalse(employe.checkPassword("azerty"));
 	}
 
-	// ============================================================
+	
 	// 2. Changer l'administrateur d'une ligue
-	// ============================================================
-
 	@Test
 	void administrateurParDefautEstLeRoot()
 	{
@@ -105,10 +101,8 @@ class testEmploye
 		assertEquals(gestionPersonnel.getRoot(), ligue.getAdministrateur());
 	}
 
-	// ============================================================
-	// 3. Supprimer un employé ou une ligue
-	// ============================================================
 
+	// 3. Supprimer un employé ou une ligue
 	@Test
 	void supprimerEmploye()
 	{
@@ -149,13 +143,11 @@ class testEmploye
 		assertFalse(gestionPersonnel.getLigues().contains(aSupprimer));
 	}
 
-	// ============================================================
+
 	// 4. Tests qui révèlent des bugs
 	//    @Disabled empêche ces tests de tourner, pour que le projet
 	//    reste vert. Enlève @Disabled pour voir l'échec, puis
-	//    décris le bug dans ton rapport.
-	// ============================================================
-
+	//    décris le bug dans le rapport.
 	@Test
 	@Disabled("Bug : après setNom, l'employé n'est plus supprimé")
 	void renommerPuisSupprimer()
